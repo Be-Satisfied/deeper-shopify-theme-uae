@@ -149,7 +149,7 @@
       }
     },
     "product_closer_look_mini_NMNaK8": {
-      "type": "product-closer-look-mini",
+      "type": "product-closer-look",
       "disabled": true,
       "name": "Take A Close Look(mini)",
       "settings": {
