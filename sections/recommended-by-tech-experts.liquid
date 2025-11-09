@@ -1,0 +1,381 @@
+{% schema %}
+{
+  "name": "Recommended by Tech",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "What Is the Deeper Connect and how does it work?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recommended by Tech",
+      "category": "pages"
+    }
+  ]
+}
+{% endschema %}
+
+<div
+  class="section-recommended-by-tech"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="container" data-section-id="{{ section.id }}">
+    <div class="section-header text-center" style="max-width: 1200px;margin: 0 auto;">
+      <h2 class="h2 heading-size-9 text-center" style="margin: 0;">
+        {{ section.settings.section_title }}
+      </h2>
+
+      <div class="recommended-by-tech-list">
+        <div class="carousel-containers">
+          <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+
+        <div class="carousel-btn carousel-btn--left" id="prevBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="41"
+            viewBox="0 0 22 41"
+            fill="none"
+          >
+            <path
+              d="M0 20.7773L19.5746 0.777344L22 3.04543L4.64632 20.7773L22 38.5093L19.5746 40.7773L0 20.7773Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <div class="carousel-btn carousel-btn--right" id="nextBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="41"
+            viewBox="0 0 22 41"
+            fill="none"
+          >
+            <path
+              d="M22 20.7773L2.42542 0.777344L0 3.04543L17.3537 20.7773L0 38.5093L2.42542 40.7773L22 20.7773Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="carousel-indicators" id="carouselIndicators"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .recommended-by-tech-list {
+    position: relative;
+    max-width: 1200px;
+    margin: 32px auto 0;
+  }
+  .carousel-containers {
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+    max-height: auto;
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  .carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .carousel-item {
+    width: calc(33.333% - 20px);
+    margin: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    opacity: 0.8;
+  }
+  .card-info {
+    padding: 8px 16px;
+    text-align: left;
+  }
+  .card-title {
+    overflow: hidden;
+    color: #1d1d1f;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: var(--SF-Pro-Text, 0px);
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .card-subtitle {
+    color: #888799;
+    margin: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 4px;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 24px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .carousel-btn--left {
+    left: -54px;
+    opacity: 0.3;
+  }
+  .carousel-btn--right {
+    right: -54px;
+  }
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 6px;
+    cursor: pointer;
+  }
+  .indicator-dot.active {
+    background-color: #fff;
+    padding:2px;
+    border: 3px solid black;
+  }
+  @media (max-width: 1200px) {
+    .carousel-item {
+      height: auto;
+      width: calc(33.333% - 16px);
+    }
+    .carousel-containers {
+      width: 95%;
+    }
+    .card-image {
+      height: 160px;
+    }
+    .carousel-containers {
+      width: 100%;
+      overflow: visible;
+    }
+    .carousel-track {
+      display: block;
+      transform: none !important;
+    }
+    .carousel-slide {
+      min-width: auto;
+      display: block;
+      padding: 0;
+    }
+    .carousel-item {
+      width: 100%;
+      margin: 16px 0;
+    }
+    .carousel-btn,
+    .carousel-indicators {
+      display: none;
+    }
+    .card-image {
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .section-recommended-by-tech {
+      padding: 0 15px;
+    }
+  }
+</style>
+
+<script>
+  const data = [
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=J-aSuNYmTlk&t=263s',
+      title: 'Reason why I love my DPN',
+      subtitle: 'Unbox Therapy',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Rectangle_40_1.png?v=1693576382',
+    },
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=Y0tr1eZvGeg',
+      title: 'DPN is very nice advanced technology',
+      subtitle: 'Jon Rettinger',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Rectangle_40_2.png?v=1693576732',
+    },
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=SDWMvdLoe6Y',
+      title: 'Reason why I love my DPN A truly all-in-one solution',
+      subtitle: 'Jabber Tech',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/12471704849968_.pic_copy.jpg?v=1704969409',
+    },
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=HVrQt6t99ps',
+      title: 'Is DPN the new VPN? | Deeper Connect Air Unboxing and First Look',
+      subtitle: 'CodeWithHarry',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/rectangle-40.png?v=1742814613',
+    },
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=Ox3EHqQ7p5Q&t=17s',
+      title: '$0/Month VPN?! Deeper Connect Mini Unboxing + Review (Deeper Network Project)',
+      subtitle: 'NextTimeTech',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/rectangle-41.png?v=1742814613',
+    },
+    {
+      videoUrl: 'https://www.youtube.com/watch?v=0O-NA6Ev-_k',
+      title: 'TINY VPN: Deeper Connect Air Review',
+      subtitle: 'Full Value Dan',
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0256/1038/7504/files/rectangle-42.png?v=1742814613',
+    },
+  ];
+
+  const itemsPerSlide = 3;
+  const totalSlides = Math.ceil(data.length / itemsPerSlide);
+
+  const carouselTrack = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const indicatorsContainer = document.getElementById('carouselIndicators');
+
+  for (let i = 0; i < totalSlides; i++) {
+    const slideDiv = document.createElement('div');
+    slideDiv.classList.add('carousel-slide');
+
+    const startIndex = i * itemsPerSlide;
+    const endIndex = startIndex + itemsPerSlide;
+    const slideData = data.slice(startIndex, endIndex);
+
+    slideData.forEach((item) => {
+      const card = document.createElement('div');
+      card.classList.add('carousel-item');
+      card.innerHTML = `
+      <div class="card-image">
+        <a href="${item.videoUrl}" target="_blank">
+          <img src="${item.imageUrl}" alt="${item.title}" />
+          <div class="play-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <path opacity="0.5" d="M32.0004 0C14.3285 0 0 14.328 0 31.9991C0 49.6703 14.3285 64 32.0004 64C49.6724 64 64 49.6746 64 32.0026C64 14.3305 49.6732 0 32.0004 0ZM45.4008 34.1237L27.2192 46.1226C26.8355 46.3742 26.391 46.5174 25.9326 46.5371C25.4742 46.5569 25.0191 46.4524 24.6152 46.2347C24.2113 46.017 23.8738 45.6943 23.6383 45.3006C23.4028 44.9069 23.2781 44.4568 23.2774 43.9981V20.0028C23.2772 19.5431 23.4016 19.092 23.6373 18.6973C23.873 18.3027 24.2112 17.9792 24.616 17.7613C25.0208 17.5434 25.477 17.4392 25.9363 17.4598C26.3955 17.4804 26.8406 17.625 27.2243 17.8782L45.4059 29.8772C45.7573 30.1091 46.0458 30.4246 46.2453 30.7954C46.4449 31.1662 46.5494 31.5806 46.5494 32.0017C46.5494 32.4228 46.4449 32.8373 46.2453 33.208C46.0458 33.5788 45.7573 33.8943 45.4059 34.1262L45.4008 34.1237Z" fill="black" fill-opacity="0.7"/>
+  <path d="M45.4007 34.1239L27.2191 46.1229C26.8355 46.3744 26.3909 46.5176 25.9326 46.5374C25.4742 46.5571 25.019 46.4526 24.6152 46.2349C24.2113 46.0173 23.8738 45.6945 23.6383 45.3008C23.4028 44.9071 23.2781 44.4571 23.2773 43.9983V20.003C23.2772 19.5433 23.4016 19.0922 23.6373 18.6976C23.8729 18.3029 24.2112 17.9794 24.6159 17.7616C25.0207 17.5437 25.477 17.4395 25.9362 17.4601C26.3955 17.4807 26.8406 17.6253 27.2242 17.8785L45.4059 29.8774C45.7573 30.1094 46.0457 30.4248 46.2453 30.7956C46.4449 31.1664 46.5493 31.5809 46.5493 32.002C46.5493 32.423 46.4449 32.8375 46.2453 33.2083C46.0457 33.5791 45.7573 33.8945 45.4059 34.1265L45.4007 34.1239Z" fill="white"/>
+</svg>
+          </div>
+        </a>
+      </div>
+      <div class="card-info">
+        <h3 class="card-title">${item.title}</h3>
+        <p class="card-subtitle">${item.subtitle}</p>
+      </div>
+    `;
+      slideDiv.appendChild(card);
+    });
+
+    carouselTrack.appendChild(slideDiv);
+  }
+
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('indicator-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.dataset.slideIndex = i;
+    indicatorsContainer.appendChild(dot);
+  }
+
+  let currentSlide = 0;
+
+  const updateButtons = () => {
+    prevBtn.style.opacity = currentSlide === 0 ? 0.3 : 1;
+    nextBtn.style.opacity = currentSlide === totalSlides - 1 ? 0.3 : 1;
+  };
+
+  const updateCarousel = () => {
+    const offset = -100 * currentSlide;
+    carouselTrack.style.transform = `translateX(${offset}%)`;
+    document.querySelectorAll('.indicator-dot').forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  };
+
+  nextBtn.addEventListener('click', () => {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateCarousel();
+      updateButtons();
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateCarousel();
+      updateButtons();
+    }
+  });
+
+  document.querySelectorAll('.indicator-dot').forEach((dot) => {
+    dot.addEventListener('click', () => {
+      currentSlide = Number(dot.dataset.slideIndex);
+      updateCarousel();
+      updateButtons();
+    });
+  });
+</script>

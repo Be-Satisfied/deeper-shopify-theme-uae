@@ -1,0 +1,248 @@
+{% schema %}
+{
+  "name": "Security introduction",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Security introduction",
+      "category": "pages"
+    }
+  ]
+}
+{% endschema %}
+
+<div
+  class="section-security-introduction"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="container" data-section-id="{{ section.id }}">
+    <div class="section-header text-center" style="max-width: 1200px;margin: 0 auto;">
+      <h2 class="h2 standard__heading heading-size-9 text-center" style="max-width:588px;margin:0 auto 32PX">
+        Enhance Your Online Security with DPN
+      </h2>
+      <div class="security-introduction-card-list">
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon1.png?v=1742467395"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">Advanced Network Protection</h3>
+            <p class="standard__paragraph">
+              AtomOS uses blockchain technology to bypass censorship, secure data transmission, and optimize bandwidth.
+            </p>
+            <a
+              href="https://deeper-network-inc.gitbook.io/deeper-connect-knowledge-base"
+              class="standard__link link-size-3"
+              target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon2.png"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">Global App Access (App Relocator)</h3>
+            <p class="standard__paragraph">
+              Seamlessly switch application locations to access worldwide services without restrictions.
+            </p>
+            <a
+              href="https://deeper-network-inc.gitbook.io/deeper-connect-knowledge-base/atom-os-functions/app-relocator"
+              class="standard__link link-size-3"
+              target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon3.png"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">7-Layer Firewall</h3>
+            <p class="standard__paragraph">
+              Enterprise-grade security with military-level encryption to safeguard your network.
+            </p>
+            <a href="/pages/enterprise-grade-security" class="standard__link link-size-3" target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon4.png"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">Ad Blocking</h3>
+            <p class="standard__paragraph">
+              Enjoy a cleaner, faster browsing experience by eliminating intrusive ads and trackers.
+            </p>
+            <a href="/pages/adblocking" class="standard__link link-size-3" target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon5.png"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">Parental Controls</h3>
+            <p class="standard__paragraph">
+              Easily filter content and manage screen time to create a safer online environment for kids.
+            </p>
+            <a href="/pages/one-click-parental-control" class="standard__link link-size-3" target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="security-introduction-card">
+          <div class="security-introduction-card__icon">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/security-introduction-icon6.png"
+              alt=""
+            >
+          </div>
+          <div class="security-introduction-card__content">
+            <h3 class="heading-size-5 security-introduction-card-title">Earn Rewards with Mining</h3>
+            <p class="standard__paragraph">Share unused bandwidth and earn DPR rewards effortlessly.</p>
+            <a href="/pages/blockchain-mining" class="standard__link link-size-3" target="_blank"
+              >Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 6.77748L7.84284 7.90063L7.84282 7.90061L4.37157 11.2698L3.21466 10.1466L6.68571 6.77746L3.21466 3.4083L4.37157 2.28516L7.84282 5.65431L7.84284 5.6543L9.00002 6.77744L9.00001 6.77746L9.00002 6.77748Z" fill="#495AF5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+    {% comment %} 两列 {% endcomment %}
+     .security-introduction-card-list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    .security-introduction-card{
+      border-radius: 18px;
+  background: rgba(73, 90, 245, 0.08);
+  display: flex;
+  padding: 24px 32px;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+    }
+    .security-introduction-card__icon{
+      flex: 0 0 48px;
+    }
+  .security-introduction-card__icon img{
+    width:100%;
+  }
+    .security-introduction-card-title{
+    margin: 0;
+  }
+  .standard__paragraph{
+      margin: 10px 0;
+      }
+    .security-introduction-card__content{
+      flex: 1 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .standard__link{
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color:  #495AF5;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+      text-transform: capitalize;
+      text-decoration:none;
+    }
+
+    @media screen and (max-width: 990px) {
+      .security-introduction-card-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .security-introduction-card{
+        flex-direction: column;
+        padding: 16px;
+        align-items: flex-start;
+      }
+
+      .section-security-introduction{
+        padding: 0px 15px;
+      }
+      .security-introduction-card__icon{
+        width:48px;
+        height:48px;
+      }
+    }
+</style>

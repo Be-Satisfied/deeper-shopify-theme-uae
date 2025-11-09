@@ -1,0 +1,112 @@
+{% schema %}
+{
+  "name": "Go and Subscribe",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Go and Subscribe",
+      "category": "pages"
+    }
+  ]
+}
+{% endschema %}
+
+<div
+  class="section-go-and-subscribe"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="go-and-subscribe-container" data-section-id="{{ section.id }}">
+    <div class="section-header text-center go-and-subscribe" style="max-width: 1200px;margin: 0 auto;">
+      <div class="go-and-subscribe-content">
+        <div class="heading-size-5 text-center">One purchase, 0 subscription fee</div>
+        <h2 class="heading-size-6 text-center nine-tenths">Upgrade your cyber-security and privacy with one device.</h2>
+      </div>
+      <a href="/" class="hero__btn btn--primary btn--small hero__btn btn" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .go-and-subscribe-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 18px;
+    background: rgba(73, 90, 245, 0.2);
+  }
+  .section-go-and-subscribe {
+  }
+  .go-and-subscribe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+    max-width: 588px;
+    margin: 0 auto;
+  }
+  .go-and-subscribe-content h2 {
+    margin: 0 auto;
+    text-align:center;
+  }
+  .go-and-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+        text-align:center;
+  }
+  .go-and-subscribe .btn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 18px;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 10px;
+    background:#495af5;
+    color:#FFF
+  }
+
+  @media screen and (max-width: 990px) {
+    .section-go-and-subscribe {
+      padding: 0px 15px;
+    }
+  }
+</style>

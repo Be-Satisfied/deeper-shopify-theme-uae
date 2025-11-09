@@ -1,0 +1,300 @@
+{% schema %}
+{
+  "name": "How it works",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "What Is the Deeper Connect and how does it work?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_block",
+      "name": "Content Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Image Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "header",
+          "content": "Link Settings"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button_text_2",
+          "label": "Second Button Text (Optional)"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Second Button Link (Optional)"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_link_enable",
+          "label": "Enable Image Link",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "image_link_url",
+          "label": "Image Link URL",
+          "default": "/"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works",
+      "category": "pages"
+    }
+  ]
+}
+{% endschema %}
+
+<div
+  class="section-how-it-works"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="container" data-section-id="{{ section.id }}">
+    <div class="section-header text-center" style="max-width: 1200px;margin: 0 auto;">
+      <h2 class="h2 standard__heading heading-size-9 text-center how-it-works">
+        {{ section.settings.section_title }}
+      </h2>
+
+      {% for block in section.blocks %}
+        {% assign image_url = block.settings.image | img_url: 'master' %}
+        {% assign title = block.settings.title %}
+        {% assign content = block.settings.content %}
+        {% assign position = block.settings.position %}
+        {% assign button_text = block.settings.button_text %}
+        {% assign button_link = block.settings.button_link %}
+        {% assign button_text_2 = block.settings.button_text_2 %}
+        {% assign button_link_2 = block.settings.button_link_2 %}
+        {% assign image_link_url = block.settings.image_link_url %}
+        {% assign image_link_enable = block.settings.image_link_enable %}
+        {% render 'image-position',
+          image_url: image_url,
+          title: title,
+          content: content,
+          position: position,
+          button_text: button_text,
+          button_link: button_link,
+          button_text_2: button_text_2,
+          button_link_2: button_link_2,
+          image_link_url: image_link_url,
+          image_link_enable: image_link_enable
+        %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  @media screen and (max-width: 768px) {
+    .how-it-works {
+      margin-bottom: 30px;
+    }
+    .section-how-it-works {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .image-position-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0 0;
+  }
+
+  .image-position-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 126px;
+  }
+  .image-position__btn {
+    color: #495af5;
+    text-decoration:none;
+    /* Button/Primary */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+
+  .image-position__btn:hover {
+    color: #495af5;
+  }
+
+  .image-position-content.left {
+    flex-direction: row;
+  }
+
+  .image-position-content.right {
+    flex-direction: row-reverse;
+  }
+  .image-link {
+    display: block;
+    max-width: 58%;
+    height: auto;
+  }
+  .image-position-content a img {
+    width: 100%;
+    height: auto;
+  }
+  .image-position-content > img {
+    max-width: 58%;
+    height: auto;
+  }
+
+  .image-position-content.left .text-content {
+    max-width: 40%;
+    padding: 0 80px 0 0;
+    text-align: left;
+  }
+
+  .image-position-content.right .text-content {
+    max-width: 40%;
+    padding: 0 0px 0 80px;
+    text-align: left;
+  }
+
+  .text-content p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-link:hover {
+    background-color: #333;
+  }
+
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .image-position__btn{
+      font-size: 14px;
+    }
+    .image-position-content {
+      flex-direction: column;
+      gap: 0px;
+    }
+    .image-link {
+      max-width: 100%;
+      height: auto;
+    }
+    .image-position-content.left,
+    .image-position-content.right {
+      flex-direction: column;
+    }
+
+    .image-position-content img,
+    .image-position-content a img {
+      max-width: 100%;
+      margin: 0 0 15px 0;
+    }
+    .text-content p {
+      margin: 0 0 16px 0;
+      font-size: 14px;
+    }
+    .text-content {
+      max-width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+
+    .image-position-content.left .text-content,
+    .image-position-content.right .text-content {
+      max-width: 100%;
+      padding: 0;
+      text-align: left;
+    }
+
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

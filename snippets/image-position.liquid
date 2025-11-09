@@ -1,0 +1,32 @@
+<div class="image-position-container">
+  <div class="image-position-content {{ position }}">
+    {% if image_link_enable and image_link_url != blank %}
+      <a href="{{ image_link_url }}" target="_blank" class="image-link">
+        <img src="{{ image_url }}" alt="{{ title }}">
+      </a>
+    {% else %}
+      <img src="{{ image_url }}" alt="{{ title }}">
+    {% endif %}
+    <div class="text-content">
+      <h2 class="h2 standard__heading heading-size-6">{{ title }}</h2>
+      <p>{{ content }}</p>
+      {% if button_text != blank %}
+        <a href="{{ button_link }}" class="image-position__btn" target="_blank">
+          {{- button_text }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99996 6.77797L7.84278 7.90111L7.84276 7.9011L4.37151 11.2703L3.2146 10.1471L6.68565 6.77795L3.2146 3.40879L4.37151 2.28564L7.84276 5.6548L7.84278 5.65479L8.99996 6.77793L8.99995 6.77795L8.99996 6.77797Z" fill="#495AF5"/>
+          </svg>
+        </a>
+      {% endif %}
+      {% if button_text_2 != blank %}
+        <br>
+        <a href="{{ button_link_2 }}" class="image-position__btn" target="_blank">
+          {{- button_text_2 }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99996 6.77797L7.84278 7.90111L7.84276 7.9011L4.37151 11.2703L3.2146 10.1471L6.68565 6.77795L3.2146 3.40879L4.37151 2.28564L7.84276 5.6548L7.84278 5.65479L8.99996 6.77793L8.99995 6.77795L8.99996 6.77797Z" fill="#495AF5"/>
+          </svg>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
