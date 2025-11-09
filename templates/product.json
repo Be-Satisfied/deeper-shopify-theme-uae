@@ -150,6 +150,7 @@
     },
     "product_closer_look_DmFqxb": {
       "type": "product-closer-look",
+      "disabled": true,
       "name": "Take A Close Look",
       "settings": {
         "padding_top": 64,
