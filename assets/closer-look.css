@@ -1,5 +1,5 @@
 .product__closer__looker-title {
-  color: var(--title-color, #1d1d1f);
+  color: #1d1d1f;
   font-size: 48px;
   font-weight: 700;
   text-transform: capitalize;
@@ -66,7 +66,7 @@
 }
 
 .feature-content__title {
-  color: var(--content-title-color, white);
+  color: white;
   font-size: 28px;
   font-weight: 700;
   line-height: 32px;
@@ -76,7 +76,7 @@
 }
 
 .feature-content__desc {
-  color: var(--content-desc-color, white);
+  color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
