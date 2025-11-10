@@ -130,44 +130,42 @@
 <style>
   /* Desktop Images */
   .feature-1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('{{ section.settings.feature1_desktop_image | default: "//public.deeper.network/Take a Closer Look_minise_web.gif" }}');
+    background-image: url('{% if section.settings.feature1_desktop_image %}{{ section.settings.feature1_desktop_image | image_url: width: 1200 }}{% else %}//public.deeper.network/Take a Closer Look_minise_web.gif{% endif %}');
   }
   .feature-2 {
-    background-image: url('{{ section.settings.feature2_desktop_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/take-a-closer-look-mini-02.jpg?v=1706088146" }}');
+    background-image: url('{% if section.settings.feature2_desktop_image %}{{ section.settings.feature2_desktop_image | image_url: width: 488 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/take-a-closer-look-mini-02.jpg?v=1706088146{% endif %}');
   }
   .feature-3 {
-    background-image: url('{{ section.settings.feature3_desktop_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/take-a-closer-look-mini-03.jpg?v=1706088147" }}');
+    background-image: url('{% if section.settings.feature3_desktop_image %}{{ section.settings.feature3_desktop_image | image_url: width: 692 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/take-a-closer-look-mini-03.jpg?v=1706088147{% endif %}');
   }
   .feature-4 {
-    background-image: url('{{ section.settings.feature4_desktop_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner4_9ce1ec96-a9c5-48b1-9eab-fcaf9136075f.png?v=1715249046" }}');
+    background-image: url('{% if section.settings.feature4_desktop_image %}{{ section.settings.feature4_desktop_image | image_url: width: 692 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner4_9ce1ec96-a9c5-48b1-9eab-fcaf9136075f.png?v=1715249046{% endif %}');
   }
   .feature-5 {
-    background-image: url('{{ section.settings.feature5_desktop_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner5_e0c8da71-b83d-47b5-a79d-0d412d38b92f.png?v=1715254529" }}');
+    background-image: url('{% if section.settings.feature5_desktop_image %}{{ section.settings.feature5_desktop_image | image_url: width: 488 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner5_e0c8da71-b83d-47b5-a79d-0d412d38b92f.png?v=1715254529{% endif %}');
   }
   .feature-6 {
-    background-image: url('{{ section.settings.feature6_desktop_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/product-why-choose-us.png?v=1740112630" }}');
+    background-image: url('{% if section.settings.feature6_desktop_image %}{{ section.settings.feature6_desktop_image | image_url: width: 1200 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/product-why-choose-us.png?v=1740112630{% endif %}');
   }
 
   /* Mobile Images */
   .feature-1-mobile img {
-    content: url('{{ section.settings.feature1_mobile_image | default: "//public.deeper.network/Take a Closer Look_minise_phone.gif" }}');
+    content: url('{% if section.settings.feature1_mobile_image %}{{ section.settings.feature1_mobile_image | image_url: width: 654 }}{% else %}//public.deeper.network/Take a Closer Look_minise_phone.gif{% endif %}');
   }
   .feature-2-mobile img {
-    content: url('{{ section.settings.feature2_mobile_image | default: "//cdn.shopify.com/s/files/1/0256/1038/7504/files/se-take-acloser-look-mobile-02.jpg?v=1706290148" }}');
+    content: url('{% if section.settings.feature2_mobile_image %}{{ section.settings.feature2_mobile_image | image_url: width: 654 }}{% else %}//cdn.shopify.com/s/files/1/0256/1038/7504/files/se-take-acloser-look-mobile-02.jpg?v=1706290148{% endif %}');
   }
   .feature-3-mobile img {
-    content: url('{{ section.settings.feature3_mobile_image | default: "//cdn.shopify.com/s/files/1/0256/1038/7504/files/se-take-acloser-look-mobile-03.jpg?v=1706290148" }}');
+    content: url('{% if section.settings.feature3_mobile_image %}{{ section.settings.feature3_mobile_image | image_url: width: 654 }}{% else %}//cdn.shopify.com/s/files/1/0256/1038/7504/files/se-take-acloser-look-mobile-03.jpg?v=1706290148{% endif %}');
   }
   .feature-4-mobile img {
-    content: url('{{ section.settings.feature4_mobile_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner4-phone.png?v=1715249218" }}');
+    content: url('{% if section.settings.feature4_mobile_image %}{{ section.settings.feature4_mobile_image | image_url: width: 654 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner4-phone.png?v=1715249218{% endif %}');
   }
   .feature-5-mobile img {
-    content: url('{{ section.settings.feature5_mobile_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner5-phone.png?v=1715254529" }}');
+    content: url('{% if section.settings.feature5_mobile_image %}{{ section.settings.feature5_mobile_image | image_url: width: 654 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini-Banner5-phone.png?v=1715254529{% endif %}');
   }
   .feature-6-mobile img {
-    content: url('{{ section.settings.feature6_mobile_image | default: "https://cdn.shopify.com/s/files/1/0256/1038/7504/files/product-why-choose-us-phone.png?v=1740112852" }}');
+    content: url('{% if section.settings.feature6_mobile_image %}{{ section.settings.feature6_mobile_image | image_url: width: 654 }}{% else %}https://cdn.shopify.com/s/files/1/0256/1038/7504/files/product-why-choose-us-phone.png?v=1740112852{% endif %}');
   }
 </style>
 
