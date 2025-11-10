@@ -150,13 +150,14 @@
     },
     "product_closer_look_DmFqxb": {
       "type": "product-closer-look",
-      "disabled": true,
       "name": "Take A Close Look",
       "settings": {
         "padding_top": 64,
         "padding_bottom": 64,
-        "feature1_title": "Protect Your Home Network's Security",
-        "feature1_desc": "Comprehensive network security features safeguard your entire family's online safety.",
+        "feature1_title": "Versatile Usage Scenarios",
+        "feature1_desc": "Ideal for use in homes, offices, cafes, during travel, at airports, or any location with wi-fi access！",
+        "feature1_desktop_image": "shopify://shop_images/img1.png",
+        "feature1_mobile_image": "shopify://shop_images/Rectangle_240647644.png",
         "feature2_title": "The Most Powerful Deeper Connect",
         "feature2_desc": "4-Core processor and 2GB of RAM memory. Strong performance for exceptional results.",
         "feature3_title": "Wide Range Wireless Coverage",
