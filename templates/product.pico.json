@@ -201,11 +201,21 @@
             "title": "",
             "description": ""
           }
+        },
+        "image_3jJzqJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mode3.webp",
+            "alt_text": "",
+            "title": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "image_JAYF9H",
-        "image_PYWcVR"
+        "image_PYWcVR",
+        "image_3jJzqJ"
       ],
       "name": "product Plug and Play",
       "settings": {
