@@ -340,10 +340,23 @@
         "row_kfmaf6": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Frame_1000004299_1.png",
+            "text_background_image": "shopify://shop_images/Frame_2967.png",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_wRwxkV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000004302.png",
+            "caption": "",
+            "heading": "Blockchian Mining",
+            "text": "<p>We do not own any centralized servers as every Deeper Connect is in essence a server and a client. All these devices distribute around the world to communicate and share bandwidth with each other.<br/>Share unused bandwidth to earn DPR rewards and exchange them for services in the Deeper Network ecosystem. Easily mine crypto, earn passive income just by participating.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -351,7 +364,8 @@
       "block_order": [
         "row_fR9kLY",
         "row_QErEKW",
-        "row_kfmaf6"
+        "row_kfmaf6",
+        "row_wRwxkV"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
