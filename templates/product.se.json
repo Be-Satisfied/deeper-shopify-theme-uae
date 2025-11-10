@@ -316,10 +316,11 @@
         "row_Q88QYg": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/It_is_not_VPN.png",
+            "caption": "",
+            "heading": "The better DPN!It’s not your average VPN…",
+            "text": "<p>The worldwide network of Deeper Connect devices enables a fully decentralized VPN experience (DPN) with Multi-Routing, Smart Routing and unrestricted access to content from any country without sacrificing Internet speed.<br/>DPN’s offer the benefits of DPN’s, but with additional advantages that exclude a central point of control.<br/>To learn more about DPN’s, please refer to this article \"A 101 on DPN’s\"</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
