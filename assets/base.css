@@ -2970,6 +2970,7 @@ details-disclosure > details {
 .content-container:after {
   content: '';
   position: absolute;
+  background-color: #fff;
   top: calc(var(--text-boxes-border-width) * -1);
   right: calc(var(--text-boxes-border-width) * -1);
   bottom: calc(var(--text-boxes-border-width) * -1);
