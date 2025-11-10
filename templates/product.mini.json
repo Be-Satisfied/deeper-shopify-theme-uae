@@ -167,11 +167,80 @@
         "feature6_title": "why choose us",
         "feature6_desc": "null"
       }
+    },
+    "product_inside_the_box_xjX9gj": {
+      "type": "product-inside-the-box",
+      "blocks": {
+        "item_kpATpY": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-inside-the-box-01.jpg",
+            "item_name": "Deeper Connect Mini",
+            "item_quantity": "1"
+          }
+        },
+        "item_8gJJhU": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/dual-antenna-wifi-adapter.png",
+            "item_name": "Deeper Connect Wi-Fi Adapter",
+            "item_quantity": "1"
+          }
+        },
+        "item_jynbMD": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/power-adapter.png",
+            "item_name": "Power Adapter (US)",
+            "item_quantity": "1"
+          }
+        },
+        "item_x4zTGC": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-inside-the-box-04.jpg",
+            "item_name": "Network Cable",
+            "item_quantity": "1"
+          }
+        },
+        "item_Tb666Q": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-inside-the-box-05.jpg",
+            "item_name": "USB Type-C Power Cable",
+            "item_quantity": "1"
+          }
+        },
+        "item_7hhimh": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-06.jpg",
+            "item_name": "Instruction Guide",
+            "item_quantity": "1"
+          }
+        }
+      },
+      "block_order": [
+        "item_kpATpY",
+        "item_8gJJhU",
+        "item_jynbMD",
+        "item_x4zTGC",
+        "item_Tb666Q",
+        "item_7hhimh"
+      ],
+      "name": "Inside The Box",
+      "settings": {
+        "section_title": "Inside The Box",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "items_per_row": 4
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_DmFqxb",
+    "product_inside_the_box_xjX9gj"
   ]
 }
