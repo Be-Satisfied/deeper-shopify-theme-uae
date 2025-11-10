@@ -289,10 +289,12 @@
         "row_f9cNKk": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Frame_1000004299_1.png",
+            "text_background_image": "shopify://shop_images/Frame_1000004300.png",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
             "button_link": ""
           }
         }
