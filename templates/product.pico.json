@@ -196,8 +196,9 @@
         "image_PYWcVR": {
           "type": "image",
           "settings": {
-            "alt_text": "Product Image",
-            "title": "Mode 1: Virtual Wire Mode",
+            "image": "shopify://shop_images/mode2.webp",
+            "alt_text": "",
+            "title": "",
             "description": ""
           }
         }
