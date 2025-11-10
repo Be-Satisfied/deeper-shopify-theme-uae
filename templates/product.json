@@ -208,12 +208,46 @@
         "padding_bottom": 64,
         "items_per_row": 3
       }
+    },
+    "product_plug_and_play_y3Wmwg": {
+      "type": "product-plug-and-play",
+      "blocks": {
+        "image_T8GzqN": {
+          "type": "image",
+          "settings": {
+            "alt_text": "Product Image",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
+          }
+        },
+        "image_xBBixw": {
+          "type": "image",
+          "settings": {
+            "alt_text": "Product Image",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_T8GzqN",
+        "image_xBBixw"
+      ],
+      "name": "product Plug and Play",
+      "settings": {
+        "section_title": "Plug and Play",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "width": "wrapper",
+        "layout": "horizontal"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "product_closer_look_DmFqxb",
-    "product_inside_the_box_RgKezd"
+    "product_inside_the_box_RgKezd",
+    "product_plug_and_play_y3Wmwg"
   ]
 }
