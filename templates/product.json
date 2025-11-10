@@ -150,7 +150,6 @@
     },
     "product_closer_look_DmFqxb": {
       "type": "product-closer-look",
-      "disabled": true,
       "name": "Take A Close Look",
       "settings": {
         "padding_top": 64,
@@ -166,7 +165,7 @@
         "feature5_title": "Web3 Boosted Capabilities",
         "feature5_desc": "Explore more than 80 app and web 3.0 features at your fingertips.",
         "feature6_title": "why choose us",
-        "feature6_desc": "null"
+        "feature6_desc": ""
       }
     }
   },
