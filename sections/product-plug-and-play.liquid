@@ -88,6 +88,17 @@
           "id": "alt_text",
           "label": "Image Alt Text",
           "default": "Product Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Mode 1: Virtual Wire Mode"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
         }
       ]
     }
@@ -119,22 +130,35 @@
       <div class="product-plug-play__content product-plug-play__content--{{ section.settings.layout }}">
         {% for block in section.blocks %}
           <div class="product-plug-play__item" {{ block.shopify_attributes }}>
-            {% if block.settings.image %}
-              <img
-                class="product-plug-play__img lazyload"
-                src="{{ block.settings.image | image_url: width: 100 }}"
-                data-src="{{ block.settings.image | image_url: width: 1200 }}"
-                data-widths="[360, 540, 720, 900, 1080, 1200]"
-                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                data-sizes="auto"
-                alt="{{ block.settings.alt_text | escape }}"
-                width="{{ block.settings.image.width }}"
-                height="{{ block.settings.image.height }}"
-                loading="lazy"
-              >
-            {% else %}
-              <div class="product-plug-play__placeholder">
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            <div class="product-plug-play__image-wrapper">
+              {% if block.settings.image %}
+                <img
+                  class="product-plug-play__img lazyload"
+                  src="{{ block.settings.image | image_url: width: 100 }}"
+                  data-src="{{ block.settings.image | image_url: width: 1200 }}"
+                  data-widths="[360, 540, 720, 900, 1080, 1200]"
+                  data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.alt_text | escape }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                  loading="lazy"
+                >
+              {% else %}
+                <div class="product-plug-play__placeholder">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if block.settings.title != blank or block.settings.description != blank %}
+              <div class="product-plug-play__text">
+                {% if block.settings.title != blank %}
+                  <h3 class="product-plug-play__item-title">{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.description != blank %}
+                  <p class="product-plug-play__item-description">{{ block.settings.description }}</p>
+                {% endif %}
               </div>
             {% endif %}
           </div>
@@ -190,8 +214,8 @@
     flex: 1;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease;
   }
 
@@ -201,14 +225,45 @@
   }
 
   .product-plug-play__item:hover {
-    transform: scale(1.02);
+    transform: translateY(-4px);
+  }
+
+  .product-plug-play__image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 16px;
   }
 
   .product-plug-play__img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+  }
+
+  .product-plug-play__text {
+    padding: 0 8px;
+    text-align: left;
+  }
+
+  .product-plug-play__item-title {
+    color: #1D1D1F;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+  }
+
+  .product-plug-play__item-description {
+    color: #6E6E73;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    word-wrap: break-word;
   }
 
   .product-plug-play__placeholder {
@@ -237,6 +292,16 @@
     .product-plug-play__content--horizontal {
       gap: 15px;
     }
+
+    .product-plug-play__item-title {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .product-plug-play__item-description {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
 
   /* Mobile Responsive */
@@ -250,15 +315,31 @@
 
     .product-plug-play__content--horizontal {
       flex-direction: column;
-      gap: 15px;
+      gap: 24px;
     }
 
     .product-plug-play__content--vertical {
-      gap: 15px;
+      gap: 24px;
     }
 
     .product-plug-play__item {
       width: 100%;
+    }
+
+    .product-plug-play__image-wrapper {
+      margin-bottom: 12px;
+      border-radius: 8px;
+    }
+
+    .product-plug-play__item-title {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 6px;
+    }
+
+    .product-plug-play__item-description {
+      font-size: 13px;
+      line-height: 18px;
     }
 
     .section-{{ section.id }}-padding {
