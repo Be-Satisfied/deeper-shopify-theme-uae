@@ -132,6 +132,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -178,6 +179,39 @@
         "feature6_desc": "",
         "feature6_desktop_image": "shopify://shop_images/product-why-choose-us_f1cc378e-d336-4815-8429-26a6147f1eed.png",
         "feature6_mobile_image": "shopify://shop_images/Rectangle_240647632_2_why-choose-us-mobile.png"
+      }
+    },
+    "product_plug_and_play_ir3DVx": {
+      "type": "product-plug-and-play",
+      "blocks": {
+        "image_JAYF9H": {
+          "type": "image",
+          "settings": {
+            "alt_text": "Product Image",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
+          }
+        },
+        "image_PYWcVR": {
+          "type": "image",
+          "settings": {
+            "alt_text": "Product Image",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JAYF9H",
+        "image_PYWcVR"
+      ],
+      "name": "product Plug and Play",
+      "settings": {
+        "section_title": "Plug and Play",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "width": "wrapper",
+        "layout": "horizontal"
       }
     },
     "product_inside_the_box_4W63Qp": {
@@ -253,6 +287,7 @@
     "main",
     "related-products",
     "product_closer_look_DmFqxb",
+    "product_plug_and_play_ir3DVx",
     "product_inside_the_box_4W63Qp"
   ]
 }
