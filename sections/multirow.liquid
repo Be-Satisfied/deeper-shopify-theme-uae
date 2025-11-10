@@ -112,7 +112,7 @@
           </div>
           <div class="image-with-text__text-item grid__item"
             {% if block.settings.text_background_image %}
-              style="background-image: url('{{ block.settings.text_background_image | image_url: width: 1000 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+              style="background-image: url('{{ block.settings.text_background_image | image_url: width: 1000 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;min-height:360px"
             {% endif %}
           >
             <div 
