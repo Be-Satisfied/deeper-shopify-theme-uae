@@ -100,7 +100,12 @@
             </div>
           </div>
           <div class="image-with-text__text-item grid__item">
-            <div style="border:0" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}">
+            <div 
+              class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.image_height }} content-container{% unless no_content_background and no_content_styles %} gradient color-{{ section.settings.row_color_scheme }}{% else %} background-transparent{% endunless %}"
+              {% if block.settings.text_background_image %}
+                style="background-image: url('{{ block.settings.text_background_image | image_url: width: 1000 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+              {% endif %}
+            >
               {%- if block.settings.caption -%}
                 <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium">
                   {{ block.settings.caption | escape }}
@@ -388,6 +393,20 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multirow.blocks.row.settings.image.label"
+        },
+        {
+          "type": "header",
+          "content": "Text Area Background"
+        },
+        {
+          "type": "image_picker",
+          "id": "text_background_image",
+          "label": "Text Area Background Image",
+          "info": "Optional background image for the text content area"
+        },
+        {
+          "type": "header",
+          "content": "Content"
         },
         {
           "type": "text",
