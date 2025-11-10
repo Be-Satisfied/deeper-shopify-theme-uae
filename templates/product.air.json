@@ -339,9 +339,9 @@
         "image_3nX4ke": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_2967.png",
-            "alt_text": "132132",
-            "title": "Mode 1: Virtual Wire Mode",
+            "image": "shopify://shop_images/source2_1_e224fc18-7a42-456b-81ac-f28860fa4b9a.avif",
+            "alt_text": "",
+            "title": "",
             "description": ""
           }
         },
@@ -349,8 +349,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/source_1_97510cc7-dae4-4681-a7c4-3e2180ea055e.avif",
-            "alt_text": "Product Image",
-            "title": "Mode 1: Virtual Wire Mode",
+            "alt_text": "",
+            "title": "",
             "description": ""
           }
         }
