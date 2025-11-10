@@ -167,11 +167,20 @@
         "feature6_title": "why choose us",
         "feature6_desc": ""
       }
+    },
+    "product_inside_the_box_RgKezd": {
+      "type": "product-inside-the-box",
+      "name": "Inside The Box",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_DmFqxb",
+    "product_inside_the_box_RgKezd"
   ]
 }
