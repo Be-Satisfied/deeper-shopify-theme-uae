@@ -297,12 +297,24 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "row_VRqQYi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000004302.png",
+            "caption": "",
+            "heading": "Blockchian Mining",
+            "text": "<p>We do not own any centralized servers as every Deeper Connect is in essence a server and a client. All these devices distribute around the world to communicate and share bandwidth with each other.<br/>Share unused bandwidth to earn DPR rewards and exchange them for services in the Deeper Network ecosystem. Easily mine crypto, earn passive income just by participating.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "row_YJmjFB",
         "row_8zJTJj",
-        "row_f9cNKk"
+        "row_f9cNKk",
+        "row_VRqQYi"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
