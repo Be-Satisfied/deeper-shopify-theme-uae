@@ -1,0 +1,104 @@
+<section
+  class="section-tabs {{ section.settings.color_bg }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="tabs"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+  <div class="wrapper section-padding inside-the-box">
+    <div class="inside-the-box__title">Inside The Box</div>
+    <div class="inside-the-box__body">
+      <div class="inside-the-box__items">
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/mini-inside-the-box-01.jpg?v=1706104982" />
+          <div>
+            <span class="inside-the-box__item_desc">Deeper Connect Mini</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/mini-inside-the-box-02.jpg?v=1706104982" />
+          <div>
+            <span class="inside-the-box__item_desc">
+              <span style="display:inline-block">Deeper Connect</span>&nbsp;<span style="display:inline-block">Wi-Fi Adapter</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Power.png?v=1716173803" />
+          <div>
+            <span class="inside-the-box__item_desc">power adapter(US)</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+      </div>
+      <div class="inside-the-box__items">
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/mini-inside-the-box-04.jpg?v=1706104982" />
+          <div>
+            <span class="inside-the-box__item_desc">network cable</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/mini-inside-the-box-05.jpg?v=1706104982" />
+          <div>
+            <span class="inside-the-box__item_desc">USB Type-C Power Cable</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+        <div class="inside-the-box__item">
+          <img src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/pico-inside-the-box-06.jpg?v=1706104982" />
+          <div>
+            <span class="inside-the-box__item_desc">Instruction Guide</span><br/>
+            <span class="inside-the-box__item_desc">× 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ 'inside-the-box.css' | asset_url | stylesheet_tag }}
+<style>
+  @media screen and (max-width: 1024px) { 
+    .inside-the-box__items{
+      width: 100%; 
+      min-width: 521px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Inside The Box",
+    "settings": [
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 64
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 180,
+        "step": 2,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 64
+      }
+    ],
+    "presets": [
+      {
+        "name": "Inside The Box",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
