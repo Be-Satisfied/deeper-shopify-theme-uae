@@ -179,11 +179,80 @@
         "feature6_desktop_image": "shopify://shop_images/product-why-choose-us_f1cc378e-d336-4815-8429-26a6147f1eed.png",
         "feature6_mobile_image": "shopify://shop_images/Rectangle_240647632_2_why-choose-us-mobile.png"
       }
+    },
+    "product_inside_the_box_4W63Qp": {
+      "type": "product-inside-the-box",
+      "blocks": {
+        "item_cz9cDb": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-01.jpg",
+            "item_name": "Deeper Connect pico",
+            "item_quantity": "1"
+          }
+        },
+        "item_CJXyLL": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-02.jpg",
+            "item_name": "Deeper Connect Wi-Fi Adapter",
+            "item_quantity": "1"
+          }
+        },
+        "item_wHnGjH": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-03.jpg",
+            "item_name": "Power Adapter (US)",
+            "item_quantity": "1"
+          }
+        },
+        "item_33ACae": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-04.jpg",
+            "item_name": "network cable",
+            "item_quantity": "1"
+          }
+        },
+        "item_RCLhRm": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-05.jpg",
+            "item_name": "USB Type-C Power Cable",
+            "item_quantity": "1"
+          }
+        },
+        "item_gzJjTx": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/pico-inside-the-box-06_32a14c24-a5e4-4f2f-94c5-560037ffdf41.jpg",
+            "item_name": "Instruction Guide",
+            "item_quantity": "1"
+          }
+        }
+      },
+      "block_order": [
+        "item_cz9cDb",
+        "item_CJXyLL",
+        "item_wHnGjH",
+        "item_33ACae",
+        "item_RCLhRm",
+        "item_gzJjTx"
+      ],
+      "name": "Inside The Box",
+      "settings": {
+        "section_title": "Inside The Box",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "items_per_row": 3
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_DmFqxb",
+    "product_inside_the_box_4W63Qp"
   ]
 }

@@ -173,11 +173,62 @@
         "feature6_title": "why choose us",
         "feature6_desc": ""
       }
+    },
+    "product_inside_the_box_DtTeb7": {
+      "type": "product-inside-the-box",
+      "blocks": {
+        "item_gdntwa": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-se-inside-the-box-01.jpg",
+            "item_name": "DPR Mini SE",
+            "item_quantity": "1"
+          }
+        },
+        "item_T9cJx3": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-se-inside-the-box-02.jpg",
+            "item_name": "power adapter (US)",
+            "item_quantity": "1"
+          }
+        },
+        "item_GQdWYL": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-se-inside-the-box-03.jpg",
+            "item_name": "network cable",
+            "item_quantity": "1"
+          }
+        },
+        "item_UwhHPD": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/mini-se-inside-the-box-04.jpg",
+            "item_name": "Instruction Guide",
+            "item_quantity": "1"
+          }
+        }
+      },
+      "block_order": [
+        "item_gdntwa",
+        "item_T9cJx3",
+        "item_GQdWYL",
+        "item_UwhHPD"
+      ],
+      "name": "Inside The Box",
+      "settings": {
+        "section_title": "Inside The Box",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "items_per_row": 3
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_DmFqxb",
+    "product_inside_the_box_DtTeb7"
   ]
 }

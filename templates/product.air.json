@@ -132,6 +132,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -179,11 +180,213 @@
         "feature6_desktop_image": "shopify://shop_images/product-why-choose-us.png",
         "feature6_mobile_image": "shopify://shop_images/product-why-choose-us-phone.png"
       }
+    },
+    "product_plug_and_play_zdkBRU": {
+      "type": "product-plug-and-play",
+      "blocks": {
+        "image_3nX4ke": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/source2_1_e224fc18-7a42-456b-81ac-f28860fa4b9a.avif",
+            "alt_text": "",
+            "title": "",
+            "description": ""
+          }
+        },
+        "image_trNQBj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/source_1_97510cc7-dae4-4681-a7c4-3e2180ea055e.avif",
+            "alt_text": "",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3nX4ke",
+        "image_trNQBj"
+      ],
+      "name": "product Plug and Play",
+      "settings": {
+        "section_title": "Plug and Play",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width": "wrapper",
+        "layout": "horizontal"
+      }
+    },
+    "product_inside_the_box_eK93Jn": {
+      "type": "product-inside-the-box",
+      "blocks": {
+        "item_NqH6fB": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/deeper-connect-air.png",
+            "item_name": "Deeper Connect Air",
+            "item_quantity": "1"
+          }
+        },
+        "item_kYFWUg": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/usb-c-to-usb-a-adapter.png",
+            "item_name": "USB C To USB A Adapter",
+            "item_quantity": "1"
+          }
+        },
+        "item_LfnEqh": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/instruction-guide.png",
+            "item_name": "Instruction Guide",
+            "item_quantity": "1"
+          }
+        }
+      },
+      "block_order": [
+        "item_NqH6fB",
+        "item_kYFWUg",
+        "item_LfnEqh"
+      ],
+      "name": "Inside The Box",
+      "settings": {
+        "section_title": "Inside The Box",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "items_per_row": 3
+      }
+    },
+    "rich_text_VWQQbh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DMTkd7": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Outstanding Features</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DMTkd7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "video_7WamUn": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/a96613ee4d234c16839ce2afe8ecfc5d.HD-720p-1.6Mbps-25188756.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "multirow_NrXbjx": {
+      "type": "multirow",
+      "blocks": {
+        "row_YJmjFB": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/It_is_not_VPN.png",
+            "caption": "",
+            "heading": "The better DPN!It’s not your average VPN…",
+            "text": "<p>The worldwide network of Deeper Connect devices enables a fully decentralized VPN experience (DPN) with Multi-Routing, Smart Routing and unrestricted access to content from any country without sacrificing Internet speed.<br/>DPN’s offer the benefits of DPN’s, but with additional advantages that exclude a central point of control.<br/>To learn more about DPN’s, please refer to this article \"A 101 on DPN’s\"</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_8zJTJj": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_2967.png",
+            "caption": "、",
+            "heading": "Absolutely No Annual Fees or Subscriptions",
+            "text": "<p>Comes fully loaded with DPN (Decentralized VPN), Ad blocking and Cybersecurity features.<br/>The Deeper Connect Pico can save you over $600USD a year, compared to subscribing to similar individual services.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_f9cNKk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000004299_1.png",
+            "text_background_image": "shopify://shop_images/Frame_1000004300.png",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_VRqQYi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000004302.png",
+            "caption": "",
+            "heading": "Blockchian Mining",
+            "text": "<p>We do not own any centralized servers as every Deeper Connect is in essence a server and a client. All these devices distribute around the world to communicate and share bandwidth with each other.<br/>Share unused bandwidth to earn DPR rewards and exchange them for services in the Deeper Network ecosystem. Easily mine crypto, earn passive income just by participating.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_YJmjFB",
+        "row_8zJTJj",
+        "row_f9cNKk",
+        "row_VRqQYi"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "large",
+        "image_layout": "alternate-left",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product_compare_MYRVLW": {
+      "type": "Product-compare",
+      "name": "Product Compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_DmFqxb",
+    "product_plug_and_play_zdkBRU",
+    "product_inside_the_box_eK93Jn",
+    "rich_text_VWQQbh",
+    "video_7WamUn",
+    "multirow_NrXbjx",
+    "product_compare_MYRVLW"
   ]
 }
