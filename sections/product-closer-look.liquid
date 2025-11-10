@@ -175,6 +175,8 @@
 <style>
   /* Desktop Images */
   .feature-1 {
+        background-repeat: no-repeat;
+    background-size: cover;
     background-image: url('{% if section.settings.feature1_desktop_image %}{{ section.settings.feature1_desktop_image | image_url: width: 1200 }}{% else %}//public.deeper.network/Take a Closer Look_minise_web.gif{% endif %}');
   }
   .feature-2 {
