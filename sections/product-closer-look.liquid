@@ -8,13 +8,18 @@
     <div class="product__closer__looker-title">Take A Closer Look</div>
 
     <!-- Desktop Version -->
+    <!-- Desktop Version -->
     <div class="product__closer__looker-body features mobile--hide small--hide medium--show large--show widescreen--show">
       <div class="feature-row">
         <div class="feature-item large">
           <div class="feature-image feature-1">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature1_title | default: "Protect Your Home Network's Security" }}</div>
-              <div class="feature-content__desc">{{ section.settings.feature1_desc | default: "Comprehensive network security features safeguard your entire family's online safety." }}</div>
+              {% if section.settings.feature1_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature1_title }}</div>
+              {% endif %}
+              {% if section.settings.feature1_desc != blank %}
+                <div class="feature-content__desc">{{ section.settings.feature1_desc }}</div>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -23,16 +28,24 @@
         <div class="feature-item small">
           <div class="feature-image feature-2">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature2_title | default: "The Most Powerful Deeper Connect" }}</div>
-              <div class="feature-content__desc">{{ section.settings.feature2_desc | default: "4-Core processor and 2GB of RAM memory. Strong performance for exceptional results." }}</div>
+              {% if section.settings.feature2_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature2_title }}</div>
+              {% endif %}
+              {% if section.settings.feature2_desc != blank %}
+                <div class="feature-content__desc">{{ section.settings.feature2_desc }}</div>
+              {% endif %}
             </div>
           </div>
         </div>
         <div class="feature-item medium">
           <div class="feature-image feature-3">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature3_title | default: "Wide Range Wireless Coverage" }}</div>
-              <div class="feature-content__desc">{{ section.settings.feature3_desc | default: "Paired with the latest dual-antenna Wi-Fi adapter, it provides coverage for living spaces of up to 1500 square feet." }}</div>
+              {% if section.settings.feature3_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature3_title }}</div>
+              {% endif %}
+              {% if section.settings.feature3_desc != blank %}
+                <div class="feature-content__desc">{{ section.settings.feature3_desc }}</div>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -41,16 +54,24 @@
         <div class="feature-item medium">
           <div class="feature-image feature-4">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature4_title | default: "Multi-Device Support for Simultaneous Use" }}</div>
-              <div class="feature-content__desc">{{ section.settings.feature4_desc | default: "Speed: 1Gbps<br>Video Format: 4K" }}</div>
+              {% if section.settings.feature4_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature4_title }}</div>
+              {% endif %}
+              {% if section.settings.feature4_desc != blank %}
+                <div class="feature-content__desc">{{ section.settings.feature4_desc }}</div>
+              {% endif %}
             </div>
           </div>
         </div>
         <div class="feature-item small">
           <div class="feature-image feature-5">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature5_title | default: "Web3 Boosted Capabilities" }}</div>
-              <div class="feature-content__desc">{{ section.settings.feature5_desc | default: "Explore more than 80 app and web 3.0 features at your fingertips." }}</div>
+              {% if section.settings.feature5_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature5_title }}</div>
+              {% endif %}
+              {% if section.settings.feature5_desc != blank %}
+                <div class="feature-content__desc">{{ section.settings.feature5_desc }}</div>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -59,7 +80,9 @@
         <div class="feature-item large">
           <div class="feature-image feature-6">
             <div class="feature-content">
-              <div class="feature-content__title">{{ section.settings.feature6_title | default: "why choose us" }}</div>
+              {% if section.settings.feature6_title != blank %}
+                <div class="feature-content__title">{{ section.settings.feature6_title }}</div>
+              {% endif %}
               {% if section.settings.feature6_desc != blank %}
                 <div class="feature-content__desc">{{ section.settings.feature6_desc }}</div>
               {% endif %}
@@ -73,49 +96,71 @@
     <div class="product__closer__looker-body features mobile--show small--show medium--hide large--hide widescreen--hide">
       <div class="feature-item">
         <div class="feature-mobile-image feature-1-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature1_title | default: "Protect Your Home Network's Security\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature1_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature1_title | default: "Protect Your Home Network's Security" }}</div>
-            <div class="feature-content__desc">{{ section.settings.feature1_desc | default: "Comprehensive network security features safeguard your entire family's online safety." }}</div>
+            {% if section.settings.feature1_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature1_title }}</div>
+            {% endif %}
+            {% if section.settings.feature1_desc != blank %}
+              <div class="feature-content__desc">{{ section.settings.feature1_desc }}</div>
+            {% endif %}
           </div>
         </div>
 
         <div class="feature-mobile-image feature-2-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature2_title | default: "The Most Powerful Deeper Connect\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature2_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature2_title | default: "The Most Powerful Deeper Connect" }}</div>
-            <div class="feature-content__desc">{{ section.settings.feature2_desc | default: "4-Core processor and 2GB of RAM memory. Ideal for the majority of home users." }}</div>
+            {% if section.settings.feature2_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature2_title }}</div>
+            {% endif %}
+            {% if section.settings.feature2_desc != blank %}
+              <div class="feature-content__desc">{{ section.settings.feature2_desc }}</div>
+            {% endif %}
           </div>
         </div>
 
         <div class="feature-mobile-image feature-3-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature3_title | default: "Wide Range Wireless Coverage\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature3_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature3_title | default: "Wide Range Wireless Coverage" }}</div>
-            <div class="feature-content__desc">{{ section.settings.feature3_desc | default: "Paired with the latest dual-antenna Wi-Fi adapter, it provides coverage for living spaces of up to 1500 square feet." }}</div>
+            {% if section.settings.feature3_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature3_title }}</div>
+            {% endif %}
+            {% if section.settings.feature3_desc != blank %}
+              <div class="feature-content__desc">{{ section.settings.feature3_desc }}</div>
+            {% endif %}
           </div>
         </div>
 
         <div class="feature-mobile-image feature-4-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature4_title | default: "Multi-Device Support for Simultaneous Use\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature4_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature4_title | default: "Multi-Device Support for Simultaneous Use" }}</div>
-            <div class="feature-content__desc">{{ section.settings.feature4_desc | default: "Speed: 1Gbps<br>Video Format: 4K" }}</div>
+            {% if section.settings.feature4_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature4_title }}</div>
+            {% endif %}
+            {% if section.settings.feature4_desc != blank %}
+              <div class="feature-content__desc">{{ section.settings.feature4_desc }}</div>
+            {% endif %}
           </div>
         </div>
 
         <div class="feature-mobile-image feature-5-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature5_title | default: "Web3 Boosted Capabilities\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature5_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature5_title | default: "Web3 Boosted Capabilities" }}</div>
-            <div class="feature-content__desc">{{ section.settings.feature5_desc | default: "Explore more than 80 app and web 3.0 features at your fingertips." }}</div>
+            {% if section.settings.feature5_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature5_title }}</div>
+            {% endif %}
+            {% if section.settings.feature5_desc != blank %}
+              <div class="feature-content__desc">{{ section.settings.feature5_desc }}</div>
+            {% endif %}
           </div>
         </div>
 
         <div class="feature-mobile-image feature-6-mobile">
-          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature6_title | default: "why choose us\" }}">
+          <img class="lazyload" loading="lazy" alt="{{ section.settings.feature6_title }}" width="327" height="438">
           <div class="feature-content">
-            <div class="feature-content__title">{{ section.settings.feature6_title | default: "why choose us" }}</div>
+            {% if section.settings.feature6_title != blank %}
+              <div class="feature-content__title">{{ section.settings.feature6_title }}</div>
+            {% endif %}
             {% if section.settings.feature6_desc != blank %}
               <div class="feature-content__desc">{{ section.settings.feature6_desc }}</div>
             {% endif %}
