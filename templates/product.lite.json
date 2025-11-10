@@ -148,30 +148,18 @@
         "padding_bottom": 28
       }
     },
-    "product_closer_look_DmFqxb": {
-      "type": "product-closer-look",
-      "name": "Take A Close Look",
+    "product_closer_look_pico_lite_VRLnbA": {
+      "type": "product-closer-look-pico-lite",
+      "name": "Take A Close Look(P+L)",
       "settings": {
         "padding_top": 64,
-        "padding_bottom": 64,
-        "feature1_title": "Protect Your Home Network's Security",
-        "feature1_desc": "Comprehensive network security features safeguard your entire family's online safety.",
-        "feature2_title": "The Most Powerful Deeper Connect",
-        "feature2_desc": "4-Core processor and 2GB of RAM memory. Strong performance for exceptional results.",
-        "feature3_title": "Wide Range Wireless Coverage",
-        "feature3_desc": "Paired with the latest dual-antenna Wi-Fi adapter, it provides coverage for living spaces of up to 1500 square feet.",
-        "feature4_title": "Multi-Device Support for Simultaneous Use",
-        "feature4_desc": "Speed: 1Gbps<br>Video Format: 4K",
-        "feature5_title": "Web3 Boosted Capabilities",
-        "feature5_desc": "Explore more than 80 app and web 3.0 features at your fingertips.",
-        "feature6_title": "why choose us",
-        "feature6_desc": ""
+        "padding_bottom": 64
       }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_closer_look_DmFqxb"
+    "product_closer_look_pico_lite_VRLnbA"
   ]
 }
