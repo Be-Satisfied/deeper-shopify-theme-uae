@@ -12,13 +12,24 @@
     margin-bottom: 40px;
     width: 100%;
     text-align: center;
+    transition: all 0.3s ease;
 }
+
 .inside-the-box__body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inside-the-box__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 .inside-the-box__items{
@@ -33,13 +44,25 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap:8px;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.inside-the-box__item:hover {
+    transform: translateY(-4px);
 }
 
 .inside-the-box__item img {
     width: 184px;
     height: 184px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.inside-the-box__item:hover img {
+    transform: scale(1.05);
 }
 
 .inside-the-box__item_desc {
@@ -48,41 +71,63 @@
     font-weight: 400;
     text-transform: capitalize;
     line-height: 20px;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .inside-the-box__body {   
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+  }
+
+  .inside-the-box__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .inside-the-box__item img {
+    width: 160px;
+    height: 160px;
   }
 }
 
 @media screen and (max-width: 768px) {
     .inside-the-box__body {
-      flex-direction: column;
       width: 100%;
-      overflow-x: auto;
-      padding-right: 17px;  
     } 
+
+    .inside-the-box__items-wrapper {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .inside-the-box__items-wrapper::-webkit-scrollbar {
+      display: none;
+    }
 
     .inside-the-box__items{
       width: 100%; 
       align-items: flex-start;
-      justify-content: center;
+      justify-content: flex-start;
     }
+
     .inside-the-box__item{
       width: 160px;
+      flex-shrink: 0;
     }
+
     .inside-the-box__item img {
         width: 160px;
         height: 160px;
     }
 
     .inside-the-box__title{
-      font-size:24px;
+      font-size: 24px;
       text-align: left;
-      margin-bottom:20px;
-      line-height: 100%;
+      margin-bottom: 20px;
+      line-height: 30px;
     }
  
     .inside-the-box{
