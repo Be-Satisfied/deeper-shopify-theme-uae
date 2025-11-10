@@ -383,6 +383,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "product_compare_Jfg64J": {
+      "type": "Product-compare",
+      "name": "Product Compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
@@ -393,6 +401,7 @@
     "product_inside_the_box_xjX9gj",
     "rich_text_JKaN4M",
     "video_C9DR3B",
-    "multirow_TFr94M"
+    "multirow_TFr94M",
+    "product_compare_Jfg64J"
   ]
 }
