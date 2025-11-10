@@ -333,28 +333,25 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_7JFFJi": {
-      "type": "rich-text",
+    "product_plug_and_play_zdkBRU": {
+      "type": "product-plug-and-play",
       "blocks": {
-        "heading_N8AzyL": {
-          "type": "heading",
+        "image_3nX4ke": {
+          "type": "image",
           "settings": {
-            "heading": "<strong>Plug-and-Play</strong>",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/Pico-lite-inside.png",
+            "alt_text": "132132"
           }
         }
       },
       "block_order": [
-        "heading_N8AzyL"
+        "image_3nX4ke"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "product Plug and Play",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width": "wrapper--none"
       }
     }
   },
@@ -366,6 +363,6 @@
     "rich_text_VWQQbh",
     "video_7WamUn",
     "multirow_NrXbjx",
-    "rich_text_7JFFJi"
+    "product_plug_and_play_zdkBRU"
   ]
 }
