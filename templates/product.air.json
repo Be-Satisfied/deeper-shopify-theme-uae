@@ -1,0 +1,178 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_AGC6VA": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"main-container\">\n  <div class=\"frame-1\">\n    {% for i in (1..5) %}\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"13\" viewBox=\"0 0 14 13\" fill=\"none\">\n        <path d=\"M6.8144 0.462171C6.88159 0.294877 7.11841 0.294876 7.18559 0.46217L8.76359 4.39171C8.7922 4.46295 8.85906 4.51153 8.93565 4.51672L13.1605 4.80319C13.3404 4.81538 13.4135 5.04062 13.2752 5.15621L10.0256 7.87127C9.9667 7.92049 9.94116 7.99909 9.95989 8.07354L10.993 12.1801C11.037 12.355 10.8454 12.4942 10.6927 12.3983L7.10634 10.1468C7.04132 10.1059 6.95868 10.1059 6.89366 10.1468L3.30731 12.3983C3.15463 12.4942 2.96303 12.355 3.00701 12.1801L4.04011 8.07354C4.05884 7.99909 4.0333 7.92049 3.97439 7.87127L0.724801 5.15621C0.586455 5.04062 0.65964 4.81538 0.839506 4.80319L5.06435 4.51672C5.14094 4.51153 5.2078 4.46295 5.23641 4.39171L6.8144 0.462171Z\" fill=\"{% if i <= 4 %}#F7BA1E{% elsif i == 5 %}url(#paint0_linear_2132_1740){% endif %}\"/>\n        {% if i == 5 %}\n          <defs>\n            <linearGradient id=\"paint0_linear_2132_1740\" x1=\"0\" y1=\"0\" x2=\"14\" y2=\"0\" gradientUnits=\"userSpaceOnUse\">\n              <stop offset=\"0%\" stop-color=\"#F7BA1E\"/>\n              <stop offset=\"50%\" stop-color=\"#F7BA1E\"/>\n              <stop offset=\"50%\" stop-color=\"#E0E1E9\"/>\n              <stop offset=\"100%\" stop-color=\"#E0E1E9\"/>\n            </linearGradient>\n          </defs>\n        {% endif %}\n      </svg>\n    {% endfor %}\n  </div>\n  <span class=\"rating\">4.9 (4590)</span>\n</div>\n\n<style>\n  .main-container {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-wrap: nowrap;\n    gap: 4px;\n    position: relative;\n    padding: 3px 8px;\n    width: fit-content;\n    min-width: 132px;\n    background: #f9f9f9;\n    border-radius: 32px;\n  }\n  .rating {\n    flex-shrink: 0;\n    flex-basis: auto;\n    position: relative;\n    height: 18px;\n    color: #2f3132;\n    font-size: 12px;\n    font-weight: 300;\n    line-height: 18px;\n    text-align: left;\n    white-space: nowrap;\n    z-index: 1;\n  }\n  .frame-1 {\n    display: flex;\n    align-items: center;\n    gap: 2px;\n  }\n  .main-container {\n    display: inline-flex;\n    align-items: center;\n  }\n  .frame-1 {\n    display: flex;\n    align-items: center;\n    margin-top: -5px;\n  }\n  .rating {\n    display: flex;\n    align-items: center;\n    margin-left: 4px;\n  }\n</style>"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "name": "Vendor",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_b4h9Jc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'tabby-installments'%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "inventory_cjYptR": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "icon_with_text_gMbJtK": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "stopwatch",
+            "image_1": "shopify://shop_images/14_day_return.png",
+            "heading_1": "14-Days Return",
+            "icon_2": "recycle",
+            "image_2": "shopify://shop_images/1_year_warranty.png",
+            "heading_2": "1-Year Warranty",
+            "icon_3": "chat_bubble",
+            "image_3": "shopify://shop_images/reliable_support.png",
+            "heading_3": "Reliable Support"
+          }
+        },
+        "text_xcpRtm": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Fast & Free Delivery Across the UAE:</strong> Order today and get your product delivered anywhere in the UAE by tomorrow — for free.",
+            "text_style": "body"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_AGC6VA",
+        "vendor",
+        "title",
+        "price",
+        "custom_liquid_b4h9Jc",
+        "variant_picker",
+        "quantity_selector",
+        "inventory_cjYptR",
+        "buy_buttons",
+        "description",
+        "icon_with_text_gMbJtK",
+        "text_xcpRtm",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "product_closer_look_DmFqxb": {
+      "type": "product-closer-look",
+      "disabled": true,
+      "name": "Take A Close Look",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "feature1_title": "Protect Your Home Network's Security",
+        "feature1_desc": "Comprehensive network security features safeguard your entire family's online safety.",
+        "feature2_title": "The Most Powerful Deeper Connect",
+        "feature2_desc": "4-Core processor and 2GB of RAM memory. Strong performance for exceptional results.",
+        "feature3_title": "Wide Range Wireless Coverage",
+        "feature3_desc": "Paired with the latest dual-antenna Wi-Fi adapter, it provides coverage for living spaces of up to 1500 square feet.",
+        "feature4_title": "Multi-Device Support for Simultaneous Use",
+        "feature4_desc": "Speed: 1Gbps<br>Video Format: 4K",
+        "feature5_title": "Web3 Boosted Capabilities",
+        "feature5_desc": "Explore more than 80 app and web 3.0 features at your fingertips.",
+        "feature6_title": "why choose us",
+        "feature6_desc": "null"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "product_closer_look_DmFqxb"
+  ]
+}
