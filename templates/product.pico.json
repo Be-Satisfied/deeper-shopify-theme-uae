@@ -317,6 +317,22 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "video_BWmpG9": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/602ec38a0a6541d09e8f4fb1af6f03a2.HD-1080p-2.5Mbps-23793892.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -325,6 +341,7 @@
     "product_closer_look_DmFqxb",
     "product_plug_and_play_ir3DVx",
     "product_inside_the_box_4W63Qp",
-    "rich_text_tWbaRi"
+    "rich_text_tWbaRi",
+    "video_BWmpG9"
   ]
 }
