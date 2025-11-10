@@ -220,12 +220,53 @@
         "padding_bottom": 64,
         "items_per_row": 3
       }
+    },
+    "rich_text_VWQQbh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DMTkd7": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Outstanding Features</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DMTkd7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "video_7WamUn": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "product_closer_look_DmFqxb",
-    "product_inside_the_box_eK93Jn"
+    "product_inside_the_box_eK93Jn",
+    "rich_text_VWQQbh",
+    "video_7WamUn"
   ]
 }
