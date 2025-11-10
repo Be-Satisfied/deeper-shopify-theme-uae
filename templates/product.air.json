@@ -339,19 +339,33 @@
         "image_3nX4ke": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Pico-lite-inside.png",
-            "alt_text": "132132"
+            "image": "shopify://shop_images/Frame_2967.png",
+            "alt_text": "132132",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
+          }
+        },
+        "image_trNQBj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/source_1_97510cc7-dae4-4681-a7c4-3e2180ea055e.avif",
+            "alt_text": "Product Image",
+            "title": "Mode 1: Virtual Wire Mode",
+            "description": ""
           }
         }
       },
       "block_order": [
-        "image_3nX4ke"
+        "image_3nX4ke",
+        "image_trNQBj"
       ],
       "name": "product Plug and Play",
       "settings": {
+        "section_title": "Plug and Play",
         "padding_top": 0,
         "padding_bottom": 0,
-        "width": "wrapper"
+        "width": "wrapper",
+        "layout": "horizontal"
       }
     }
   },
