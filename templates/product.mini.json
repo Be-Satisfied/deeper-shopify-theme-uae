@@ -309,6 +309,63 @@
         "full_width": false,
         "color_scheme": "",
         "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "multirow_TFr94M": {
+      "type": "multirow",
+      "blocks": {
+        "row_fR9kLY": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/It_is_not_VPN.png",
+            "caption": "Caption",
+            "heading": "The better DPN!It’s not your average VPN…",
+            "text": "<p>The worldwide network of Deeper Connect devices enables a fully decentralized VPN experience (DPN) with Multi-Routing, Smart Routing and unrestricted access to content from any country without sacrificing Internet speed.<br/>DPN’s offer the benefits of DPN’s, but with additional advantages that exclude a central point of control.<br/>To learn more about DPN’s, please refer to this article \"A 101 on DPN’s\"</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_QErEKW": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_kfmaf6": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_fR9kLY",
+        "row_QErEKW",
+        "row_kfmaf6"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "large",
+        "image_layout": "alternate-left",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
@@ -320,6 +377,7 @@
     "product_plug_and_play_VHmUay",
     "product_inside_the_box_xjX9gj",
     "rich_text_JKaN4M",
-    "video_C9DR3B"
+    "video_C9DR3B",
+    "multirow_TFr94M"
   ]
 }
