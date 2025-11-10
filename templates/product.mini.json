@@ -235,12 +235,48 @@
         "padding_bottom": 64,
         "items_per_row": 4
       }
+    },
+    "product_plug_and_play_VHmUay": {
+      "type": "product-plug-and-play",
+      "blocks": {
+        "image_Eie7tC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/setup-mode-02.webp",
+            "alt_text": "Product Image",
+            "title": "",
+            "description": ""
+          }
+        },
+        "image_mUikhe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/setup-mode-02.webp",
+            "alt_text": "Product Image",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Eie7tC",
+        "image_mUikhe"
+      ],
+      "name": "product Plug and Play",
+      "settings": {
+        "section_title": "Plug and Play",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "width": "wrapper",
+        "layout": "horizontal"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "product_closer_look_DmFqxb",
-    "product_inside_the_box_xjX9gj"
+    "product_inside_the_box_xjX9gj",
+    "product_plug_and_play_VHmUay"
   ]
 }
