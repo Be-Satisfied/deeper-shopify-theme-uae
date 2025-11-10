@@ -180,6 +180,41 @@
         "feature6_mobile_image": "shopify://shop_images/product-why-choose-us-phone.png"
       }
     },
+    "product_plug_and_play_zdkBRU": {
+      "type": "product-plug-and-play",
+      "blocks": {
+        "image_3nX4ke": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/source2_1_e224fc18-7a42-456b-81ac-f28860fa4b9a.avif",
+            "alt_text": "",
+            "title": "",
+            "description": ""
+          }
+        },
+        "image_trNQBj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/source_1_97510cc7-dae4-4681-a7c4-3e2180ea055e.avif",
+            "alt_text": "",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3nX4ke",
+        "image_trNQBj"
+      ],
+      "name": "product Plug and Play",
+      "settings": {
+        "section_title": "Plug and Play",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width": "wrapper",
+        "layout": "horizontal"
+      }
+    },
     "product_inside_the_box_eK93Jn": {
       "type": "product-inside-the-box",
       "blocks": {
@@ -333,39 +368,12 @@
         "padding_bottom": 0
       }
     },
-    "product_plug_and_play_zdkBRU": {
-      "type": "product-plug-and-play",
-      "blocks": {
-        "image_3nX4ke": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/source2_1_e224fc18-7a42-456b-81ac-f28860fa4b9a.avif",
-            "alt_text": "",
-            "title": "",
-            "description": ""
-          }
-        },
-        "image_trNQBj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/source_1_97510cc7-dae4-4681-a7c4-3e2180ea055e.avif",
-            "alt_text": "",
-            "title": "",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_3nX4ke",
-        "image_trNQBj"
-      ],
-      "name": "product Plug and Play",
+    "product_compare_ALr9Ri": {
+      "type": "Product-compare",
+      "name": "Product Compare",
       "settings": {
-        "section_title": "Plug and Play",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "width": "wrapper",
-        "layout": "horizontal"
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     }
   },
@@ -373,10 +381,11 @@
     "main",
     "related-products",
     "product_closer_look_DmFqxb",
+    "product_plug_and_play_zdkBRU",
     "product_inside_the_box_eK93Jn",
     "rich_text_VWQQbh",
     "video_7WamUn",
     "multirow_NrXbjx",
-    "product_plug_and_play_zdkBRU"
+    "product_compare_ALr9Ri"
   ]
 }
