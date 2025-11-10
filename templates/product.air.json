@@ -264,7 +264,7 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Outstanding Features</strong>",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         }
       },
