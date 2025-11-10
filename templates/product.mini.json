@@ -329,10 +329,11 @@
         "row_QErEKW": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/Frame_2967.png",
             "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "heading": "Absolutely No Annual Fees or Subscriptions",
+            "text": "<p>Comes fully loaded with DPN (Decentralized VPN), Ad blocking and Cybersecurity features.<br/>The Deeper Connect Pico can save you over $600USD a year, compared to subscribing to similar individual services.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
