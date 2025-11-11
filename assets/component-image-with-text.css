@@ -413,6 +413,7 @@
 
 @media screen and (min-width: 750px) {
   .multirow__inner {
-    row-gap: var(--grid-desktop-vertical-spacing);
+      row-gap:20px;
+    /* row-gap: var(--grid-desktop-vertical-spacing); */
   }
 }
