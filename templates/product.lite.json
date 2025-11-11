@@ -214,12 +214,21 @@
         "padding_bottom": 64,
         "items_per_row": 3
       }
+    },
+    "product_compare_AinwgH": {
+      "type": "Product-compare",
+      "name": "Product Compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "product_closer_look_pico_lite_VRLnbA",
-    "product_inside_the_box_gCyQYg"
+    "product_inside_the_box_gCyQYg",
+    "product_compare_AinwgH"
   ]
 }
