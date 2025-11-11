@@ -1,0 +1,126 @@
+<section
+  class="section-videos {{ section.settings.color_bg }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="tabs"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;">
+  <p class="section-videos-title">
+    {% comment %} <img src="https://live.staticflickr.com/65535/53103224822_9ced459864_o.png" alt="" /> {% endcomment %}
+    <span>User Testimonials</span>
+  </p>
+  <div class="section-videos-list">
+    <div class="section-videos-item">
+      <h4>EXCESSORIZE ME.</h4>
+      <p>
+        <strong>1.37M</strong>
+        subscribers</p>
+      <p>
+        "Which is important this actually allows other devices you own to              
+        also stay protected with just one connection, what I call their
+        Command Center offers."
+      </p>
+      <div class="campaignStoryVideoWrapper">
+        <iframe
+          class="videos"
+          src="https://www.youtube.com/embed/MuI5dg-0ukA?autohide=1&amp;controls=1&amp;showinfo=0"
+          data-airgap-id="126" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="section-videos-item">
+      {% comment %} <h3 class="section-videos-item-subtitle">Techsource</h3> {% endcomment %}
+      <h4>Techsource</h4>
+      <p>
+        <strong>
+          3.6M</strong>
+        subscribers</p>
+      <p>
+        "Not only can It access any website without worrying about              
+        censorship or data leaks but I can access geo-restricting content as
+        well."
+      </p>
+      <div class="campaignStoryVideoWrapper">
+        <iframe
+          class="videos"
+          src="https://www.youtube.com/embed/H8mGpjGZtl8?autohide=1&amp;controls=1&amp;showinfo=0"
+          data-airgap-id="152" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="section-videos-item">
+      {% comment %} <h3 class="section-videos-item-subtitle">Designs By IFR</h3> {% endcomment %}
+      <h4>Designs By IFR</h4>
+      <p>
+        <strong>596K</strong>subscribers</p>
+      <p>
+        "My wife has also been requesting a VPN for quite some time because              
+        she wants to watch some of the favorite shows overseas."
+      </p>
+      <div class="campaignStoryVideoWrapper">
+        <iframe
+          class="videos"
+          src="https://www.youtube.com/embed/J51_B2iOPe0?autohide=1&amp;controls=1&amp;showinfo=0"
+          data-airgap-id="134" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="section-videos-item">
+      {% comment %} <h3 class="section-videos-item-subtitle">Lando Kalriz</h3> {% endcomment %}
+      <h4>Lando Kalriz</h4>
+      <p>
+        <strong>989K</strong>
+        subscribers</p>
+      <p>
+        "It's Geo unblocking feature gives you access to all your favorite              
+        websites anywhere in the world. "
+      </p>
+      <div class="campaignStoryVideoWrapper">
+        <iframe
+          class="videos"
+          src="https://www.youtube.com/embed/luBxLl0j_wA?autohide=1&amp;controls=1&amp;showinfo=0"
+          data-airgap-id="135"
+          style="letter-spacing: 0px" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ 'product-video-air.css' | asset_url | stylesheet_tag }}
+<style>
+
+
+/*
+   @media screen and (max-width: 1024px) {
+   .inside-the-box__items{
+   width: 100%;
+   align-items: flex-start;
+   justify-content: center;
+   }
+   }
+*/</style>{% schema %}
+{
+  "name": "product-video-air(Air)",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    }, {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-video-air(Air)",
+      "category": "Product"
+    }
+  ]
+}{% endschema %}
