@@ -369,6 +369,21 @@
         "padding_bottom": 0
       }
     },
+    "video_GE7Ggb": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "product_compare_MYRVLW": {
       "type": "Product-compare",
       "name": "Product Compare",
@@ -387,6 +402,7 @@
     "rich_text_VWQQbh",
     "video_7WamUn",
     "multirow_NrXbjx",
+    "video_GE7Ggb",
     "product_compare_MYRVLW"
   ]
 }
