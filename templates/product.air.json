@@ -376,6 +376,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
+        "video": "shopify://files/videos/d735452d91fa4a5aa881fbe679fbe4a0.mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
@@ -384,17 +385,17 @@
         "padding_bottom": 20
       }
     },
-    "product_compare_MYRVLW": {
-      "type": "Product-compare",
-      "name": "Product Compare",
+    "product_video_air_rRfxrJ": {
+      "type": "product-video-air",
+      "name": "product-video-air(Air)",
       "settings": {
         "padding_top": 64,
         "padding_bottom": 64
       }
     },
-    "product_video_air_rRfxrJ": {
-      "type": "product-video-air",
-      "name": "product-video-air(Air)",
+    "product_compare_MYRVLW": {
+      "type": "Product-compare",
+      "name": "Product Compare",
       "settings": {
         "padding_top": 64,
         "padding_bottom": 64
