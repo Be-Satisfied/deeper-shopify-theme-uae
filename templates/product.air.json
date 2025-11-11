@@ -391,6 +391,14 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "product_video_air_rRfxrJ": {
+      "type": "product-video-air",
+      "name": "product-video-air(Air)",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
@@ -403,6 +411,7 @@
     "video_7WamUn",
     "multirow_NrXbjx",
     "video_GE7Ggb",
+    "product_video_air_rRfxrJ",
     "product_compare_MYRVLW"
   ]
 }
