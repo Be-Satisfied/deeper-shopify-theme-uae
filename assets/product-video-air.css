@@ -1,0 +1,69 @@
+.section-videos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-videos-title {
+  width: 100%;
+  color: #1d1d1f;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 56px;
+  word-wrap: break-word;
+  margin-bottom: 64px;
+  text-align: center;
+  margin-top: 0;
+}
+.section-videos-title img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section-videos-list .section-videos-item .section-videos-item-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.section-videos-list .section-videos-item h4 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.section-videos-list .section-videos-item p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.section-videos-list .section-videos-item .campaignStoryVideoWrapper {
+  margin-top: 30px;
+  position: relative;
+}
+
+.section-videos-subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+iframe.videos {
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .section-videos {
+    width: 100%;
+    padding: 0 10px;
+  }
+  iframe {
+    height: 400px;
+  }
+} /*# sourceMappingURL=index.css.map */
