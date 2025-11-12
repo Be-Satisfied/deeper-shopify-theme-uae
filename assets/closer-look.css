@@ -301,7 +301,7 @@
 
   .feature-content__title {
     font-size: 18px;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .feature-content__desc {
