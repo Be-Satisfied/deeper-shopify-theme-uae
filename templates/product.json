@@ -34,13 +34,6 @@
           "type": "price",
           "settings": {}
         },
-        "custom_liquid_b4h9Jc": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% render 'tabby-installments'%}"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -105,7 +98,6 @@
         "vendor",
         "title",
         "price",
-        "custom_liquid_b4h9Jc",
         "variant_picker",
         "quantity_selector",
         "inventory_cjYptR",
