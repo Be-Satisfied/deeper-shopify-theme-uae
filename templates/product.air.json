@@ -36,6 +36,7 @@
         },
         "custom_liquid_b4h9Jc": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'tabby-installments'%}"
           }
